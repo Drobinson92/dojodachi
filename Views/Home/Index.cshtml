@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Hello!</title>
+        <link rel='stylesheet' href="~/css/index.css">
+    </head>
+    <body>
+        <h1>DojoDachi</h1>
+        <h3 style='text-align: center;'>Fullness @ViewBag.fullness Happiness @ViewBag.happiness Meals @ViewBag.meals Energy @ViewBag.energy</h3>
+        <div>
+            <img src="~/img/happy.jpg" alt-src="Dachi">
+
+        </div>
+        <form action="feed">
+            <input type="submit" value="Feed">
+        </form>
+        <form action="play">
+            <input type="submit" value="Play">
+        </form>
+        <form action="work">
+            <input type="submit" value="Work">
+        </form>
+        <form action="sleep">
+            <input type="submit" value='Sleep'>
+        </form><br>
+        <p>@TempData["message"]</p>
+    </body>
+</html>
